@@ -18,8 +18,8 @@
 		"serve:public": "concurrently -c auto -n \"serve:,serve:public:\" \"pnpm:serve:both:*\" \"pnpm:serve:public:*\"",
 		"serve:insiders": "concurrently -c auto -n \"serve:,serve:insiders:\" \"pnpm:serve:both:*\" \"pnpm:serve:insiders:*\"",
 		"serve": "pnpm serve:public",
-		"deploy:public": "mkdocs gh-deploy --config-file mkdocs.public.yml --force --remote-branch production --message \":rocket: Deploy to production\"",
-		"deploy:insiders": "mkdocs gh-deploy --config-file mkdocs.insiders.yml --force --remote-branch production --message \":rocket: Deploy to production\"",
+		"deploy:public": "mkdocs gh-deploy --config-file mkdocs.public.yml --force --remote-branch production --message \":rocket: Deploy to production\" --no-history",
+		"deploy:insiders": "mkdocs gh-deploy --config-file mkdocs.insiders.yml --force --remote-branch production --message \":rocket: Deploy to production\" --no-history",
 		"deploy": "pnpm deploy:public"
 	},
 	"dependencies": {
