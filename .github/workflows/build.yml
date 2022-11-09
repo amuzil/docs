@@ -7,7 +7,7 @@ on:
       branches:
       - main
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     if: github.event.repository.fork == false
     environment: production
