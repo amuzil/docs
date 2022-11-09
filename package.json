@@ -18,8 +18,8 @@
 		"serve:public": "concurrently -c auto -n \"serve:,serve:public:\" \"pnpm:serve:both:*\" \"pnpm:serve:public:*\"",
 		"serve:insiders": "concurrently -c auto -n \"serve:,serve:insiders:\" \"pnpm:serve:both:*\" \"pnpm:serve:insiders:*\"",
 		"serve": "pnpm serve:public",
-		"deploy:public": "mkdocs gh-deploy --config-file mkdocs.public.yml",
-		"deploy:insiders": "mkdocs gh-deploy --config-file mkdocs.insiders.yml",
+		"deploy:public": "mkdocs gh-deploy --config-file mkdocs.public.yml --force",
+		"deploy:insiders": "mkdocs gh-deploy --config-file mkdocs.insiders.yml --force",
 		"deploy": "pnpm deploy:public"
 	},
 	"dependencies": {
