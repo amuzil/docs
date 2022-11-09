@@ -1,0 +1,19 @@
+nav:
+  - Home: index.md
+  - Blog:
+      - blog/index.md
+  - Magus:
+      - magus/index.md
+      - Tags: magus/tags.md
+      - Skills:
+          - magus/skills/index.md
+          - Forms: magus/skills/forms.md
+          - Modifiers: magus/skills/modifiers.md
+          - Techniques:
+              - magus/skills/techniques/index.md
+              - Earth: magus/skills/techniques/earth.md
+              - Earth Spear: magus/skills/techniques/earth-spear.md
+              - Earth Wall: magus/skills/techniques/earth-wall.md
+  - Avatar:
+      - avatar/index.md
+      - Tags: avatar/tags.md

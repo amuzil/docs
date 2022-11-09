@@ -1,2 +1,16 @@
-# Compiled site
+# Secrets
+.env
+
+# MkDocs
 site/
+.cache/
+
+# Node.js
+node_modules/
+
+# NPM
+package-lock.json
+
+# Compiled SASS
+*.css
+*.css.map

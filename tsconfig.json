@@ -1,0 +1,26 @@
+{
+	"extends": "@tsconfig/node18-strictest-esm/tsconfig.json",
+	"compilerOptions": {
+		"baseUrl": "docs/scripts",
+		"declaration": false,
+		"declarationMap": false,
+		"preserveConstEnums": true,
+		"lib": [
+			"dom",
+			"esnext"
+		],
+		"outDir": "docs/scripts",
+		"preserveValueImports": true,
+		"sourceMap": true,
+		"types": [
+			"node"
+		]
+	},
+	"include": [
+		"docs/scripts/**/*"
+	],
+	"exclude": [
+		"node_modules",
+		"**/*.spec.ts"
+	]
+}

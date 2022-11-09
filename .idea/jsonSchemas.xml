@@ -32,7 +32,15 @@
               <option name="patterns">
                 <list>
                   <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="mkdocs.*.yml" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                  <Item>
                     <option name="path" value="mkdocs.yml" />
+                  </Item>
+                  <Item>
+                    <option name="path" value="navigation.yml" />
                   </Item>
                 </list>
               </option>

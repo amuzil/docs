@@ -105,12 +105,14 @@ By open sourcing the documentation, we hope to achieve the following:
 [![Material for MkDocs][mkdocs-material-shield]][mkdocs-material-url]
 [![MkDocs][mkdocs-shield]][mkdocs-url]
 [![GitHub Pages][github-pages-shield]][github-pages-url]
+[![Node.js][nodejs-shield]][nodejs-url]
+[![PNPM][pnpm-shield]][pnpm-url]
 
 [![Markdown][markdown-shield]][markdown-url]
-[![HTML][html-shield]][html-url]
-[![CSS][css-shield]][css-url]
-[![JavaScript][javascript-shield]][javascript-url]
 [![Python][python-shield]][python-url]
+[![HTML5][html5-shield]][html5-url]
+[![SCSS][scss-shield]][scss-url]
+[![TypeScript][typescript-shield]][typescript-url]
 
 [![PyCharm][pycharm-shield]][pycharm-url]
 [![Visual Studio Code][vscode-shield]][vscode-url]
@@ -133,11 +135,42 @@ Before you begin, ensure you have met the following requirements:
 * [Python 3](https://www.python.org/downloads/)
 	* To check if you have Python installed, run the following command:
 
-	  ```sh
+	  ```bash
 	  python --version
 	  ```
 
 	  It should return a version number, such as 3.11.0. Ensure that the version number is 3.
+
+* [Node.js](https://nodejs.org/en/download/)
+  / (We recommend using NVM ([Linux/macOS](https://github.com/nvm-sh/nvm)
+  / [Windows](https://github.com/coreybutler/nvm-windows)) to install Node.js)
+	* To check if you have Node.js installed, run the following command:
+
+	  ```bash
+	  node --version
+	  ```
+
+	  It should return a version number, such as 18.11.0. Ensure that the version number is at least 18.
+
+* [PNPM](https://pnpm.io/installation)
+	* To check if you have PNPM installed, run the following command:
+
+	  ```bash
+	  pnpm --version
+	  ```
+
+	  It should return a version number, such as 7.14.2. Ensure that the version number is at least 7.
+
+* [Git](https://git-scm.com/downloads)
+	* To check if you have Git installed, run the following command:
+
+	  ```bash
+	  git --version
+	  ```
+
+	  It should return a version number, such as 2.33.0. Ensure that the version number is at least 2.
+
+* (Windows only) [GTK+](https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer/releases)
 
 ### Installation
 
@@ -148,40 +181,85 @@ or [GitKraken](https://www.gitkraken.com/).
 
 1. Clone the repo
 
-   ```sh
+   ```bash
    git clone https://github.com/amuzil/docs.git
    ```
 
 2. Create a Python virtual environment and activate it
 
-   ```sh
+   ```bash
    # All platforms
-   $ python -m venv venv
-   # Windows
-   $ venv\Scripts\activate
+   python -m venv venv
    # Linux/macOS
-   $ source venv/bin/activate
+   source venv/bin/activate
+   # Windows
+   venv\Scripts\activate
    ```
 
 3. Install the dependencies
 
-   ```sh
-   pip install -r requirements.txt
+   ```bash
+   pnpm install
    ```
 
 4. Serve the live preview
 
-   ```sh
-   mkdocs serve
+   ```bash
+   pnpm serve
    ```
-
-5. Build the site
-
-   ```sh
-   mkdocs build
-   ```
+   
+This will start a live preview of the site. You can access it at <http://localhost:8000>.
 
 <p align="right" style="text-align: right">(<a href="#readme-top">back to top</a>)</p>
+
+### Installation (Insiders)
+
+If you have access to the Insiders version of Material for MkDocs, the installation process is slightly different.
+
+1. Clone the repo
+
+   ```bash
+   git clone https://github.com/amuzil/docs.git
+   ```
+
+2. Create a `.env` file and set your Insiders access token
+
+   ```env
+   INSIDERS_TOKEN={YOUR_TOKEN}
+   ```
+
+3. Create a Python virtual environment and activate it
+
+   ```bash
+   # All platforms
+   python -m venv venv
+   # Linux/macOS
+   source venv/bin/activate
+   # Windows
+   venv\Scripts\activate
+   ```
+
+4. (Windows only) Install LXML binaries
+   1. Download the [latest Wheel file](https://www.lfd.uci.edu/~gohlke/pythonlibs/#lxml) to your `venv/Lib` folder
+   2. Run the following command:
+
+	  ```bash
+	  pip install venv/Lib/{WHEEL_FILE}
+	  ```
+
+5. Install the dependencies
+
+   ```bash
+   pnpm install
+   # Remember to replace {YOUR_TOKEN} with your actual token
+   pip install git+https://{YOUR_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
+   ```
+
+6. Serve the live preview
+
+   ```bash
+   pnpm serve:insiders
+   ```
 
 <!-- CONTRIBUTING -->
 
@@ -211,19 +289,19 @@ or [GitKraken](https://www.gitkraken.com/).
 1. Fork the Project
 2. Create your Feature Branch
 
-   ```sh
+   ```bash
    git checkout -b feature/AmazingFeature
    ```
 
 3. Commit your Changes
 
-   ```sh
+   ```bash
    git commit -m ":sparkles: Add some AmazingFeature"
    ```
 
 4. Push to the Branch
 
-   ```sh
+   ```bash
    git push origin feature/AmazingFeature
    ```
 
@@ -344,26 +422,34 @@ Main contact: **Luka "Mahtaran" Leer**
 
 [github-pages-url]: https://pages.github.com/
 
+[nodejs-shield]: https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white
+
+[nodejs-url]: https://nodejs.org/en/
+
+[pnpm-shield]: https://img.shields.io/badge/pnpm-CC3534?style=for-the-badge&logo=pnpm&logoColor=white
+
+[pnpm-url]: https://pnpm.io/
+
 
 [markdown-shield]: https://img.shields.io/badge/Markdown-4a525a?style=for-the-badge&logo=markdown&logoColor=white
 
 [markdown-url]: https://daringfireball.net/projects/markdown/
 
-[html-shield]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
-
-[html-url]: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
-
-[css-shield]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
-
-[css-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
-
-[javascript-shield]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
-
-[javascript-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
-
 [python-shield]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
 
 [python-url]: https://www.python.org/
+
+[html5-shield]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
+
+[html5-url]: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
+
+[scss-shield]: https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white
+
+[scss-url]: https://sass-lang.com/
+
+[typescript-shield]: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
+
+[typescript-url]: https://www.typescriptlang.org/
 
 
 [pycharm-shield]: https://img.shields.io/badge/PyCharm-000000?style=for-the-badge&logo=pycharm&logoColor=white

@@ -1,0 +1,131 @@
+site_name: Amuzil Docs
+site_url: https://docs.amuzil.com
+site_author: Amuzil
+site_description: Amuzil Docs
+site_dir: site
+
+docs_dir: docs
+
+repo_url: https://github.com/amuzil/docs
+repo_name: Amuzil Docs
+edit_uri: edit/main/docs
+
+INHERIT: navigation.yml
+
+theme:
+  name: material
+  custom_dir: overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: octicons/sun-16
+        name: Switch to dark mode
+      primary: teal
+      accent: amber
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: octicons/moon-16
+        name: Switch to light mode
+      primary: teal
+      accent: amber
+  font:
+    text: Lexend
+    code: JetBrains Mono
+  language: en
+  logo: assets/brand/logo.png
+  favicon: assets/favicon/waterfall/favicon.png
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - toc.follow
+    - navigation.top
+    - search.suggest
+    - announce.dismiss
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+  icon:
+    tag:
+      default: material/tag
+      magus: material/book
+      avatar: material/tea
+      skills: material/file-tree
+    repo: simple/github
+
+plugins:
+  search: {}
+  social: {}
+  tags: {}
+  git-revision-date-localized:
+    type: timeago
+    enable_creation_date: true
+    fallback_to_build_date: true
+
+copyright: Licensed to the Public Domain through the <a href="https://unlicense.org/">Unlicense</a>.
+
+extra:
+  homepage: https://amuzil.com
+  tags:
+    Magus: magus
+    Avatar: avatar
+    Skills: skills
+    Earth Technique: earth-technique
+  social:
+    - name: GitHub
+      icon: simple/github
+      link: https://github.com/amuzil
+    - name: Instagram
+      icon: simple/instagram
+      link: https://instagram.com/amuzilsocial
+  generator: false
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - scripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+#  - node_modules/mathjax/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: ⚓
+      permalink_title: Link to this section
+  - tables
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true

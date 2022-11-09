@@ -7,9 +7,27 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
         with:
           python-version: 3.11
-      - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: "pnpm"
+      - uses: actions/cache@v3
+        with:
+          key: ${{ github.ref }}
+          path: |
+            ~/.pnpm-store
+            .venv
+            node_modules
+            .cache
+      - name: Install dependencies
+        run: pnpm install
+      - name: Install Material for MkDocs Insiders
+        run: pip install git+https://${{ secrets.INSIDERS_TOKEN }}@github.com/squidfunk/mkdocs-material-insiders.git
+      - name: Build
+        run: pnpm build
+      - name: Deploy
+        run: pnpm deploy

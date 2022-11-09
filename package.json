@@ -1,0 +1,32 @@
+{
+	"name": "@amuzil/docs",
+	"version": "1.0.0",
+	"scripts": {
+		"preinstall": "npx only-allow pnpm",
+		"postinstall": "pip install -r requirements.txt",
+		"build:both:sass": "sass docs/stylesheets:docs/stylesheets --style compressed",
+		"build:both:typescript": "tsc",
+		"build:public:mkdocs": "mkdocs build --config-file mkdocs.public.yml",
+		"build:insiders:mkdocs": "mkdocs build --config-file mkdocs.insiders.yml",
+		"build:public": "concurrently --c auto -n \"build:,build:public:\" \"pnpm:build:both:*\" \"pnpm:build:public:*\"",
+		"build:insiders": "concurrently -c auto -n \"build:,build:insiders:\" \"pnpm:build:both:*\" \"pnpm:build:insiders:*\"",
+		"build": "pnpm build:public",
+		"serve:both:sass": "sass docs/stylesheets:docs/stylesheets --style compressed --update --watch",
+		"serve:both:typescript": "tsc --watch",
+		"serve:public:mkdocs": "mkdocs serve --config-file mkdocs.public.yml --watch-theme --watch includes --watch navigation.yml",
+		"serve:insiders:mkdocs": "mkdocs serve --config-file mkdocs.insiders.yml --watch-theme --watch includes --watch navigation.yml --watch mkdocs.public.yml",
+		"serve:public": "concurrently -c auto -n \"serve:,serve:public:\" \"pnpm:serve:both:*\" \"pnpm:serve:public:*\"",
+		"serve:insiders": "concurrently -c auto -n \"serve:,serve:insiders:\" \"pnpm:serve:both:*\" \"pnpm:serve:insiders:*\"",
+		"serve": "pnpm serve:public",
+		"deploy:public": "mkdocs gh-deploy --config-file mkdocs.public.yml",
+		"deploy:insiders": "mkdocs gh-deploy --config-file mkdocs.insiders.yml",
+		"deploy": "pnpm deploy:public"
+	},
+	"dependencies": {
+		"@tsconfig/node18-strictest-esm": "^1.0.1",
+		"@types/node": "^18.11.9",
+		"concurrently": "^7.5.0",
+		"sass": "^1.56.0",
+		"typescript": "^4.8.4"
+	}
+}
