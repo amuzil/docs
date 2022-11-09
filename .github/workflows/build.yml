@@ -50,14 +50,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-python-
 
-      - name: Setup MkDocs cache
-        uses: actions/cache@v3
-        with:
-          path: .cache
-          key: ${{ github.ref }}-mkdocs
-          restore-keys: |
-            ${{ github.ref }}-mkdocs
-
       - name: Install dependencies
         run: pnpm install
 
