@@ -1,0 +1,75 @@
+name: build
+on:
+  push:
+      branches:
+      - main
+  pull_request:
+      branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: github.event.repository.fork == false
+    environment: production
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7
+          run_install: false
+
+      - name: Get PNPM store
+        id: pnpm-cache
+        shell: bash
+        run: echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - name: Setup PNPM cache
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
+
+      - name: Setup Python cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-python-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-python-
+
+      - name: Setup MkDocs cache
+        uses: actions/cache@v3
+        with:
+          path: .cache
+          key: ${{ github.ref }}-mkdocs
+          restore-keys: |
+            ${{ github.ref }}-mkdocs
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Install Material for MkDocs Insiders
+        run: pip install git+https://${INSIDERS_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
+
+      - name: Build
+        run: pnpm build:insiders
+
+env:
+  INSIDERS_TOKEN: ${{ secrets.INSIDERS_TOKEN }}
