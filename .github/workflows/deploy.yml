@@ -72,7 +72,7 @@ jobs:
           git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 
       - name: Disable branch protection
-        uses: benjefferies/disable-branch-protection@master
+        uses: benjefferies/branch-protection-bot@master
         if: always()
         with:
           access_token: ${{ secrets.BRANCH_PROTECTION_TOKEN }}
@@ -82,7 +82,7 @@ jobs:
         run: pnpm deploy:insiders
 
       - name: Enable branch protection
-        uses: benjefferies/disable-branch-protection@master
+        uses: benjefferies/branch-protection-bot@master
         if: always()
         with:
           access_token: ${{ secrets.BRANCH_PROTECTION_TOKEN }}
