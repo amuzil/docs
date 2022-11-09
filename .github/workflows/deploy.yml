@@ -53,16 +53,19 @@ jobs:
           path: .cache
           key: ${{ github.ref }}-mkdocs
           restore-keys: |
-              ${{ github.ref }}-mkdocs
+            ${{ github.ref }}-mkdocs
 
       - name: Install dependencies
         run: pnpm install
 
       - name: Install Material for MkDocs Insiders
-        run: pip install git+https://${{ secrets.INSIDERS_TOKEN }}@github.com/squidfunk/mkdocs-material-insiders.git
+        run: pip install git+https://${INSIDERS_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
 
       - name: Build
         run: pnpm build:insiders
 
       - name: Deploy
         run: pnpm deploy:insiders
+
+env:
+  INSIDERS_TOKEN: ${{ secrets.INSIDERS_TOKEN }}
