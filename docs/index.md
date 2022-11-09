@@ -1,7 +1,6 @@
 ---
 hide:
   - footer
-comments: true
 ---
 
 # Welcome to the Amuzil Docs
