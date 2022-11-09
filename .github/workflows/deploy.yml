@@ -69,5 +69,13 @@ jobs:
       - name: Deploy
         run: pnpm deploy:insiders
 
+      - name: Commit CNAME file to `production` branch
+        run: |
+          echo "docs.amuzil.com" > CNAME
+          git config --global user.name "GitHub Actions"
+          git add CNAME
+          git commit -m ":rocket: CNAME to docs.amuzil.com"
+          git push origin production
+
 env:
   INSIDERS_TOKEN: ${{ secrets.INSIDERS_TOKEN }}
