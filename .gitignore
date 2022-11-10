@@ -11,6 +11,8 @@ node_modules/
 # NPM
 package-lock.json
 
-# Compiled SASS
+# Compiled
 *.css
 *.css.map
+*.js
+*.js.map

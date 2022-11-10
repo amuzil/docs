@@ -14,7 +14,8 @@
 		"sourceMap": true,
 		"types": [
 			"node"
-		]
+		],
+		"newLine": "lf"
 	},
 	"include": [
 		"docs/scripts/**/*"
