@@ -7,7 +7,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     if: github.event.repository.fork == false
-    environment: production
+    environment: github-pages
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -55,7 +55,9 @@ jobs:
         run: pnpm install
 
       - name: Install Material for MkDocs Insiders
-        run: pip install git+https://${INSIDERS_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
+        run: pip install git+https://${MKDOCS_MATERIAL_INSIDERS_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
+        env:
+          MKDOCS_MATERIAL_INSIDERS_TOKEN: ${{ secrets.MKDOCS_MATERIAL_INSIDERS_TOKEN }}
 
       - name: Build
         run: pnpm build:insiders
@@ -69,6 +71,3 @@ jobs:
         run: pnpm deploy:insiders
         env:
           GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
-
-env:
-  INSIDERS_TOKEN: ${{ secrets.INSIDERS_TOKEN }}

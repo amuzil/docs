@@ -225,7 +225,7 @@ If you have access to the Insiders version of Material for MkDocs, the installat
 2. Create a `.env` file and set your Insiders access token
 
    ```env
-   INSIDERS_TOKEN={YOUR_TOKEN}
+   MKDOCS_MATERIAL_INSIDERS_TOKEN={YOUR_TOKEN}
    ```
 
 3. Create a Python virtual environment and activate it
@@ -240,11 +240,11 @@ If you have access to the Insiders version of Material for MkDocs, the installat
    ```
 
 4. (Windows only) Install LXML binaries
-   1. Download the [latest Wheel file](https://www.lfd.uci.edu/~gohlke/pythonlibs/#lxml) to your `venv/Lib` folder
+   1. Download the [latest (CPython) Wheel file](https://www.lfd.uci.edu/~gohlke/pythonlibs/#lxml) to your `venv/Lib` folder
    2. Run the following command:
 
 	  ```bash
-	  pip install venv/Lib/{WHEEL_FILE}
+	  pip install venv\Lib\{WHEEL_FILE}
 	  ```
 
 5. Install the dependencies
