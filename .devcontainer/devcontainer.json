@@ -13,6 +13,6 @@
 	},
 	"postCreateCommand": {
 		"install": "pnpm install",
-		"install-insiders": "pip install git+https://${localEnv:MKDOCS_INSIDERS_TOKEN:no-token}@github.com/squidfunk/mkdocs-material-insiders.git"
+		"install-insiders": "pip install git+https://${localEnv:MKDOCS_MATERIAL_INSIDERS_TOKEN:no-token}@github.com/squidfunk/mkdocs-material-insiders.git"
 	}
 }
