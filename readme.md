@@ -74,28 +74,42 @@
 [![GitHub closed issues][github-closed-issues]][github-closed-issues-url]
 
 The Amuzil Docs is a documentation site for all Amuzil projects.
-It is and will probably always be a work in progress, as we are always adding new features to our projects.
-The documentation is made with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/),
+It is and will probably always be a work in progress, as we are always adding
+new features to our projects.
+The documentation is made
+with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/),
 a Material Design theme for [MkDocs](https://www.mkdocs.org/).
 
 <p align="right" style="text-align: right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Why open source the documentation?
 
-We believe that open source is the future, and that everyone should be able to contribute to the projects they use.
-Documentation is a very important part of any project; a project is useless if no one knows how to use it.
+We believe that open source is the future, and that everyone should be able to
+contribute to the projects they use.
+Documentation is a very important part of any project; a project is useless if
+no one knows how to use it.
 By open sourcing the documentation, we hope to achieve the following:
 
-- [ ] **Better documentation**: The documentation is written by the community, for the community. The community will
-  write much better documentation than a small team of developers, as they are the end users of the documentation.
-- [ ] **More contributors**: By open sourcing the documentation, we hope to attract more contributors to the project.
-  Contributors can help us improve the documentation, and they can also help us improve the projects themselves.
-- [ ] **Reduced workload**: By open sourcing the documentation, we hope to reduce the workload of the developers.
-  The developers can focus on developing the projects, and the community can focus on improving the documentation.
-- [ ] **Open Source**: Open source is one of the core pillars of our community. We believe that everyone should be able
-  to contribute to the projects they use, so that they can improve it and learn from it.
-- [ ] **Community**: We want to build a community around our projects, and open sourcing the documentation is a great
-  way to do that. It gives active contributors a sense of ownership, and it gives people a reason and way to contribute
+- [ ] **Better documentation**: The documentation is written by the community,
+  for the community. The community will
+  write much better documentation than a small team of developers, as they are
+  the end users of the documentation.
+- [ ] **More contributors**: By open sourcing the documentation, we hope to
+  attract more contributors to the project.
+  Contributors can help us improve the documentation, and they can also help us
+  improve the projects themselves.
+- [ ] **Reduced workload**: By open sourcing the documentation, we hope to
+  reduce the workload of the developers.
+  The developers can focus on developing the projects, and the community can
+  focus on improving the documentation.
+- [ ] **Open Source**: Open source is one of the core pillars of our community.
+  We believe that everyone should be able
+  to contribute to the projects they use, so that they can improve it and learn
+  from it.
+- [ ] **Community**: We want to build a community around our projects, and open
+  sourcing the documentation is a great
+  way to do that. It gives active contributors a sense of ownership, and it
+  gives people a reason and way to contribute
   without necessitating technical knowledge or skills.
 
 <p align="right" style="text-align: right">(<a href="#readme-top">back to top</a>)</p>
@@ -126,7 +140,8 @@ By open sourcing the documentation, we hope to achieve the following:
 
 ## Getting started
 
-This guide is not yet finalised and may not be complete. It is also not yet tested.
+This guide is not yet finalised and may not be complete. It is also not yet
+tested.
 
 ### Prerequisites
 
@@ -139,7 +154,8 @@ Before you begin, ensure you have met the following requirements:
 	  python --version
 	  ```
 
-	  It should return a version number, such as 3.11.0. Ensure that the version number is 3.
+	  It should return a version number, such as 3.11.0. Ensure that the version
+	  number is 3.
 
 * [Node.js](https://nodejs.org/en/download/)
   / (We recommend using NVM ([Linux/macOS](https://github.com/nvm-sh/nvm)
@@ -150,7 +166,8 @@ Before you begin, ensure you have met the following requirements:
 	  node --version
 	  ```
 
-	  It should return a version number, such as 18.11.0. Ensure that the version number is at least 18.
+	  It should return a version number, such as 18.11.0. Ensure that the
+	  version number is at least 18.
 
 * [PNPM](https://pnpm.io/installation)
 	* To check if you have PNPM installed, run the following command:
@@ -159,7 +176,8 @@ Before you begin, ensure you have met the following requirements:
 	  pnpm --version
 	  ```
 
-	  It should return a version number, such as 7.14.2. Ensure that the version number is at least 7.
+	  It should return a version number, such as 7.14.2. Ensure that the version
+	  number is at least 7.
 
 * [Git](https://git-scm.com/downloads)
 	* To check if you have Git installed, run the following command:
@@ -168,15 +186,20 @@ Before you begin, ensure you have met the following requirements:
 	  git --version
 	  ```
 
-	  It should return a version number, such as 2.33.0. Ensure that the version number is at least 2.
+	  It should return a version number, such as 2.33.0. Ensure that the version
+	  number is at least 2.
 
-* (Windows only) [GTK+](https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer/releases)
+* (Windows
+  only) [GTK+](https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer/releases)
 
 ### Installation
 
-While the below guide details specific `git` commands, you also can (and probably should) use a GUI for Git.
-Options include any [JetBrains IDE](https://www.jetbrains.com/products.html) (such
-as [IntelliJ IDEA](https://www.jetbrains.com/idea/)), [GitHub Desktop](https://desktop.github.com/),
+While the below guide details specific `git` commands, you also can (and
+probably should) use a GUI for Git.
+Options include any [JetBrains IDE](https://www.jetbrains.com/products.html) (
+such
+as [IntelliJ IDEA](https://www.jetbrains.com/idea/))
+, [GitHub Desktop](https://desktop.github.com/),
 or [GitKraken](https://www.gitkraken.com/).
 
 1. Clone the repo
@@ -207,14 +230,16 @@ or [GitKraken](https://www.gitkraken.com/).
    ```bash
    pnpm serve
    ```
-   
-This will start a live preview of the site. You can access it at <http://localhost:8000>.
+
+This will start a live preview of the site. You can access it
+at <http://localhost:8000>.
 
 <p align="right" style="text-align: right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Installation (Insiders)
 
-If you have access to the Insiders version of Material for MkDocs, the installation process is slightly different.
+If you have access to the Insiders version of Material for MkDocs, the
+installation process is slightly different.
 
 1. Clone the repo
 
@@ -240,12 +265,14 @@ If you have access to the Insiders version of Material for MkDocs, the installat
    ```
 
 4. (Windows only) Install LXML binaries
-   1. Download the [latest (CPython) Wheel file](https://www.lfd.uci.edu/~gohlke/pythonlibs/#lxml) to your `venv/Lib` folder
-   2. Run the following command:
+	1. Download
+	   the [latest (CPython) Wheel file](https://www.lfd.uci.edu/~gohlke/pythonlibs/#lxml)
+	   to your `venv/Lib` folder
+	2. Run the following command:
 
-	  ```bash
-	  pip install venv\Lib\{WHEEL_FILE}
-	  ```
+	   ```bash
+	   pip install venv\Lib\{WHEEL_FILE}
+	   ```
 
 5. Install the dependencies
 
@@ -265,33 +292,56 @@ If you have access to the Insiders version of Material for MkDocs, the installat
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create.
+Contributions are what make the open source community such an amazing place to
+learn, inspire, and create.
 Any contributions you make are **greatly appreciated**.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request.
+If you have a suggestion that would make this better, please fork the repo and
+create a pull request.
 You can also simply open an issue.
 If you really like the project, consider giving it a star!
 
-> Something we like to use it [Gitmoji](https://gitmoji.dev/), which is an emoji guide for Git commit messages.
+> Something we like to use it [Gitmoji](https://gitmoji.dev/), which is an emoji
+> guide for Git commit messages.
 > It makes it easier to see what kind of changes have been made at a glance.
 > While not required, we heavily recommend using it.
 >
 > To make things easier, check
-> out [Gitmoji Plus: Commit Button](https://plugins.jetbrains.com/plugin/12383-gitmoji-plus-commit-button),
-> a plugin for JetBrains IDEs that adds a button to the commit dialog that allows you to easily add a Gitmoji to your
+>
+out [Gitmoji Plus: Commit Button](https://plugins.jetbrains.com/plugin/12383-gitmoji-plus-commit-button)
+,
+> a plugin for JetBrains IDEs that adds a button to the commit dialog that
+> allows you to easily add a Gitmoji to your
 > commit message.
 
-While the below guide details specific `git` commands, you also can (and probably should) use a GUI for Git.
-Options include any [JetBrains IDE](https://www.jetbrains.com/products.html) (such
-as [IntelliJ IDEA](https://www.jetbrains.com/idea/)), [GitHub Desktop](https://desktop.github.com/),
+While the below guide details specific `git` commands, you also can (and
+probably should) use a GUI for Git.
+Options include any [JetBrains IDE](https://www.jetbrains.com/products.html) (
+such
+as [IntelliJ IDEA](https://www.jetbrains.com/idea/))
+, [GitHub Desktop](https://desktop.github.com/),
 or [GitKraken](https://www.gitkraken.com/).
 
 1. Fork the Project
 2. Create your Feature Branch
 
    ```bash
-   git checkout -b feature/AmazingFeature
+   git checkout -b feature/amazing-feature
    ```
+
+   Branch naming guidelines:
+
+	- Prefix your branch with the topic. Use lowercase branch names. Replace
+	  spaces with hyphens.
+	- If you are working on a page in the documentation, prefix your branch with
+	  the project that page belongs to. For example, if you are working on
+	  Magus's `installation.md` page, your branch would be `magus/installation`.
+	  If you are working on a page that does not belong to a specific project,
+	  prefix it with `docs`.
+	- If you are working on a blog post, prefix your branch with `blog`.
+	- If you are working on anything else, use `feature`, or something else if
+	  applicable (`devcontainer`, `ci`, etc.).
+
 
 3. Commit your Changes
 
@@ -314,7 +364,8 @@ or [GitKraken](https://www.gitkraken.com/).
 
 ## License
 
-Distributed under the Unlicense. See [`license.md`](license.md) for more information.
+Distributed under the Unlicense. See [`license.md`](license.md) for more
+information.
 
 <p align="right" style="text-align: right">(<a href="#readme-top">back to top</a>)</p>
 
