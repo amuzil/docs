@@ -50,6 +50,11 @@ Lifts the target.
 
 Lowers the target.
 
+### Breathe
+
+Focuses energy within the user's chest. Useful for buff abilities, or techniques
+such as Ice Breath.
+
 ## Element specific forms
 
 Elements can have forms unique to them.
