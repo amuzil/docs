@@ -59,12 +59,17 @@ Compresses the target, for example into a sphere.
 
 ### Strike
 
-Strikes the target, for example in the techniques _air gust_ and _fire blast_.
+Strikes the target, for example in the techniques _Air Gust_ and _Fire Blast_.
 Can be modified for ranged, or left as is for melee.
 
 ### Twist
 
 Twists the target. For example, it rotates a projectile.
+
+### Breathe
+
+Focuses energy within the user's chest. Useful for buff abilities, or techniques
+such as Ice Breath.
 
 ## Element specific forms
 
