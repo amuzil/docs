@@ -9,9 +9,9 @@ Earth Wall is a technique that creates a wall of earth in front of the caster.
 
 ## Forms
 
-- [Raise](../forms.md#raise)
-- [Block](../forms.md#block)
+- [Raise](/magus/skills/forms.md#raise)
+- [Block](/magus/skills/forms.md#block)
 
 ## Modifiers
 
-- [Directional](../modifiers.md#directional)
+- [Directional](/magus/skills/modifiers.md#directional)

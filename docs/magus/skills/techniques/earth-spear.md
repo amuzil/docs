@@ -9,8 +9,8 @@ Earth Spear is a technique that launches a spear of earth at a target.
 
 ## Forms
 
-- [Strike](../forms.md#strike)
+- [Strike](/magus/skills/forms.md#strike)
 
 ## Modifiers
 
-- [Target](../modifiers.md#target)
+- [Target](/magus/skills/modifiers.md#target)
