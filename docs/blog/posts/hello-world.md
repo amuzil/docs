@@ -16,7 +16,9 @@ links:
 
 # Hello world!
 
-Welcome to our first blog post. In this, we can also use all kinds of fancy Markdown features to write a nice blog.
+Welcome to our first blog post.
+In blog posts like these,
+we can also use all kinds of fancy Markdown features to write a nice blog.
 
 <!-- more -->
 
