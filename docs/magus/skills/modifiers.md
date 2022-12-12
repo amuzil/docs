@@ -17,8 +17,8 @@ Multiplies the technique by repeating the form button.
 ### Directional
 
 Aims the technique in a certain direction by walking that way.
-Additionally, the `shift`/`sneak` key makes it "lower", such as for
-a fire kick sweep, or block.
+Additionally, the `sneak` key makes it "lower", such as for
+a Fire Kick sweep, or block.
 
 ### Target
 
