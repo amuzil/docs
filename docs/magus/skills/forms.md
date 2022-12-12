@@ -20,6 +20,11 @@ as shown by it being usable for lightning.
 
 Blocks from an attack by the target.
 
+### Breathe
+
+Focuses energy within the user's chest.
+Useful for buff abilities or techniques such as _ice breath_.
+
 ### Burst
 
 Violently shoots out the target, like a shotgun.
