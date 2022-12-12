@@ -301,9 +301,9 @@ create a pull request.
 You can also simply open an issue.
 If you really like the project, consider giving it a star!
 
-> We use [Gitmoji](https://gitmoji.dev/), which is an emoji guide for Git commit messages.
-> It makes it easier to see what kind of changes have been made at a glance.
->
+We use [Gitmoji](https://gitmoji.dev/), which is an emoji guide for Git commit messages.
+It makes it easier to see what kind of changes have been made at a glance.
+
 > To make things easier, check out
 > [Gitmoji Plus: Commit Button](https://plugins.jetbrains.com/plugin/12383-gitmoji-plus-commit-button),
 > a plugin for JetBrains IDEs that adds a button to the commit dialog that
@@ -311,10 +311,9 @@ If you really like the project, consider giving it a star!
 
 While the below guide details specific `git` commands, you also can (and
 probably should) use a GUI for Git.
-Options include any [JetBrains IDE](https://www.jetbrains.com/products.html) (
-such
-as [IntelliJ IDEA](https://www.jetbrains.com/idea/))
-, [GitHub Desktop](https://desktop.github.com/),
+Options include any [JetBrains IDE](https://www.jetbrains.com/products.html)
+(such as [IntelliJ IDEA](https://www.jetbrains.com/idea/)),
+[GitHub Desktop](https://desktop.github.com/),
 or [GitKraken](https://www.gitkraken.com/).
 
 1. Fork the Project
