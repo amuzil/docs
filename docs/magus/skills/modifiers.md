@@ -8,19 +8,19 @@ Common modifiers can be unlocked by anyone in the skill tree.
 
 ### Focus
 
-Charges the technique by holding down the form button
+Charges the technique by holding down the form button.
 
 ### Multi
 
-Multiplies the technique by repeating the form button
+Multiplies the technique by repeating the form button.
 
 ### Directional
 
-Aims the technique in a certain direction by walking that way
+Aims the technique in a certain direction by walking that way.
 
 ### Target
 
-Aims the technique at a target by looking at them
+Aims the technique at a target by looking at them.
 
 ## Special modifiers
 
