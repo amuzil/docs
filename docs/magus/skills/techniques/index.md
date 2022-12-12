@@ -6,3 +6,9 @@ For example, think of [earth wall](earth-wall.md) as a technique that creates a 
 or [earth spear](earth-spear.md) as a technique that launches a spear of earth at a target.
 
 Techniques can be unlocked and upgraded in the skill tree.
+
+## Examples
+
+Here are some examples of techniques from the [Avatar](/avatar) mod:
+
+[TAGS]

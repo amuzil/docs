@@ -11,7 +11,6 @@ nav:
           - Modifiers: magus/skills/modifiers.md
           - Techniques:
               - magus/skills/techniques/index.md
-              - Earth: magus/skills/techniques/earth.md
               - Earth Spear: magus/skills/techniques/earth-spear.md
               - Earth Wall: magus/skills/techniques/earth-wall.md
   - Avatar:

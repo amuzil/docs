@@ -53,15 +53,21 @@ plugins:
       magus/tags.md:
         - magus
         - skills
-      magus/skills/techniques/earth.md:
+      magus/skills/techniques/index.md:
+        - air-technique
         - earth-technique
+        - fire-technique
+        - water-technique
       avatar/tags.md:
         - avatar
     tags_allowed:
       - Magus
       - Avatar
       - Skills
+      - Air Technique
       - Earth Technique
+      - Fire Technique
+      - Water Technique
   git-committers:
     repository: amuzil/docs
     branch: main
