@@ -8,20 +8,6 @@ or in some cases a creature, animal or plant.
 
 ## Base forms
 
-### Push
-
-Pushes the target.
-
-### Pull
-
-Pulls the target.
-
-### Burst
-
-Violently shoots out the target, like a shotgun.
-The release of compressed force.
-More powerful than blast, but less controlled.
-
 ### Arc
 
 Makes the target swirl around you.
@@ -30,9 +16,15 @@ or generating a protective field around you.
 A selected target is not required for this form,
 as shown by it being usable for lightning.
 
-### Shrink
+### Block
 
-Compresses the target, for example into a sphere.
+Blocks from an attack by the target.
+
+### Burst
+
+Violently shoots out the target, like a shotgun.
+The release of compressed force.
+More powerful than blast, but less controlled.
 
 ### Grow
 
@@ -40,26 +32,34 @@ Increases the size of the target.
 Although sometimes it might have the same effect as the focus modifier,
 they are not the same and can have varying effects.
 
-### Twist
+### Lower
 
-Twists the target. For example, it rotates a projectile.
+Lowers the target.
+
+### Pull
+
+Pulls the target.
+
+### Push
+
+Pushes the target.
+
+### Raise
+
+Lifts the target.
+
+### Shrink
+
+Compresses the target, for example into a sphere.
 
 ### Strike
 
 Strikes the target, for example in the techniques _air gust_ and _fire blast_.
 Can be modified for ranged, or left as is for melee.
 
-### Block
+### Twist
 
-Blocks from an attack by the target.
-
-### Raise
-
-Lifts the target.
-
-### Lower
-
-Lowers the target.
+Twists the target. For example, it rotates a projectile.
 
 ## Element specific forms
 
