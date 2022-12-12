@@ -301,18 +301,13 @@ create a pull request.
 You can also simply open an issue.
 If you really like the project, consider giving it a star!
 
-> Something we like to use it [Gitmoji](https://gitmoji.dev/), which is an emoji
-> guide for Git commit messages.
+> We use [Gitmoji](https://gitmoji.dev/), which is an emoji guide for Git commit messages.
 > It makes it easier to see what kind of changes have been made at a glance.
-> While not required, we heavily recommend using it.
 >
-> To make things easier, check
->
-out [Gitmoji Plus: Commit Button](https://plugins.jetbrains.com/plugin/12383-gitmoji-plus-commit-button)
-,
+> To make things easier, check out
+> [Gitmoji Plus: Commit Button](https://plugins.jetbrains.com/plugin/12383-gitmoji-plus-commit-button),
 > a plugin for JetBrains IDEs that adds a button to the commit dialog that
-> allows you to easily add a Gitmoji to your
-> commit message.
+> allows you to easily add a Gitmoji to your commit message.
 
 While the below guide details specific `git` commands, you also can (and
 probably should) use a GUI for Git.
@@ -346,13 +341,13 @@ or [GitKraken](https://www.gitkraken.com/).
 3. Commit your Changes
 
    ```bash
-   git commit -m ":sparkles: Add some AmazingFeature"
+   git commit -m ":sparkles: Add some amazing feature"
    ```
 
 4. Push to the Branch
 
    ```bash
-   git push origin feature/AmazingFeature
+   git push origin feature/amazing-feature
    ```
 
 5. Open a Pull Request
