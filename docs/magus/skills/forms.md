@@ -26,6 +26,22 @@ VR: Pull one or both arms towards the player.
 
 Multikey: Mouse wheel towards the player.
 
+### Raise
+Lifts the target.
+
+#### Usage
+VR: Raise one or both arms up.
+
+Multikey: Mouse motion up.
+
+### Lower
+Lowers the target.
+
+#### Usage
+VR: Lower one or both arms.
+
+Multikey: Mouse motion down.
+
 ### Burst
 
 Violently shoots out the target, like a shotgun. The release of compressed force. More powerful than blast, but less controlled.
