@@ -71,6 +71,10 @@ Twists the target. For example, it rotates a projectile.
 Focuses energy within the user's chest. Useful for buff abilities, or techniques
 such as Ice Breath.
 
+### Step
+Mobility in a direction parallel with the ground. 
+Can be combined with other forms and modifiers to work in any direction.
+
 ## Element specific forms
 
 Elements can have forms unique to them.
