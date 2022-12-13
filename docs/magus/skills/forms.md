@@ -60,7 +60,7 @@ VR: A general circular motion with both arms, like taichi.
 
 Multikey: Mouse motion in a circle, `Sneak`.
 
-### Shrink
+### Contract
 
 Compresses the target; E.g. into a sphere.
 
@@ -69,7 +69,7 @@ VR: Hands slowly close in together, as if compressing something.
 
 Multikey: `Sneak`, mouse wheel towards the player.
 
-### Grow
+### Expand
 
 Increases the size of the target. Although sometimes it might have the same effect as the focus modifier, they are not the same and can have varying effects.
 
