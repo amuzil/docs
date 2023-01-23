@@ -14,7 +14,7 @@ complex techniques.
 
 ### Push
 
-Potential Effect: Pushes the target.
+*Potential Effect:* Pushes the target.
 
 #### Usage
 *VR:* Push one or both arms away from the player.
@@ -23,7 +23,7 @@ Potential Effect: Pushes the target.
 
 ### Pull
 
-Potential Effect: Pulls the target.
+*Potential Effect:* Pulls the target.
 
 #### Usage
 *VR:* Pull one or both arms towards the player.
@@ -31,7 +31,7 @@ Potential Effect: Pulls the target.
 *Multikey:* Mouse wheel towards the player.
 
 ### Raise
-Potential Effect: Lifts the target.
+*Potential Effect:* Lifts the target.
 
 #### Usage
 *VR:* Raise one or both arms up.
@@ -81,6 +81,7 @@ Potential Effect: Lifts the target.
 *VR:* Hands start together and slowly come apart, as if you’re tearing something.
 
 *Multikey:* `Sneak`, mouse wheel away from the player.
+
 
 ### Twist
 
@@ -134,6 +135,7 @@ Can be combined with other forms and modifiers to work in any direction.
 *VR:* Flick the VR motion controller joystick twice, or flick both wrists twice simultaneously in a direction.
 
 *Multikey:* Double tap a direction.
+
 
 ## Element specific forms
 
