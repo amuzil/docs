@@ -19,7 +19,7 @@ Multiplies the technique by repeating the form button.
 
 Aims the technique in a certain direction by walking that way.
 Additionally, there is a difference between "lower" and "upper",
-such as with a _Fire Kick_ or a Block. By default, the direction
+such as with a _Fire Kick_ or a _Block_. By default, the direction
 is "upper", but it can be changed by holding down the `Sneak` key.
 
 ### Target
