@@ -5,7 +5,7 @@ executing a form in a certain way.
 
 ## Common modifiers
 
-Common modifiers can be unlocked by anyone in the skill tree.
+Common modifiers can be unlocked by anyone in a skill tree.
 
 ### Focus
 
@@ -19,8 +19,8 @@ Multiplies the technique by repeating the form button.
 
 Aims the technique in a certain direction by walking that way.
 Additionally, there is a difference between "lower" and "upper",
-such as with a _fire kick_ or a block. By default, the direction
-is "upper", but it can be changed by holding down the `sneak` key.
+such as with a _Fire Kick_ or a _Block_. By default, the direction
+is "upper", but it can be changed by holding down the `Sneak` key.
 
 ### Target
 
