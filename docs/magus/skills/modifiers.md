@@ -5,7 +5,7 @@ executing a form in a certain way.
 
 ## Common modifiers
 
-Common modifiers can be unlocked by anyone in the skill tree.
+Common modifiers can be unlocked by anyone in a skill tree.
 
 ### Focus
 
