@@ -92,8 +92,28 @@ complex techniques.
 Spin direction depends on what the technique requires; otherwise just flavour, 
 intensity matters more.
 
-*Multikey:* A>W>D>S twice; goes through directional inputs clockwise twice. 
-Also works anti-clockwise.
+*Multikey:* Rotate the mouse in a circle in front of the player. Stores which direction,
+intensity, e.t.c.
+
+### Rotate
+
+*Potential Effect:* Charges up an AOE vortex.
+
+#### Usage
+*VR:* Spin clockwise or anticlockwise.
+
+*Multikey:* Spin clockwise or anticlockwise.
+
+
+### Slice
+
+*Potential Effect:* Slices through the target or prepares a projectile
+in a blade shape.
+
+#### Usage
+*VR:* Cut in a direction with an arm, as if using a dagger or a sword.
+
+*Multikey:* Sharp mouse motion in a direction.
 
 ### Strike
 
