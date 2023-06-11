@@ -34,9 +34,9 @@ These special modifiers include VFX and flavour finishers.
 
 ## Example
 
-An [earth wall](/magus/skills/techniques/earth-wall.md) has
+An [earth wall](/magus/skills/techniques/earth/earth-wall.md) has
 a [directional](#directional) modifier,
 which specifies in what direction the wall appears.
-[Earth spear](/magus/skills/techniques/earth-spear.md) has
+[Earth spear](/magus/skills/techniques/earth/earth-spear.md) has
 a [target](#target) modifier,
 which means that you need to specify a target the spear should aim for.

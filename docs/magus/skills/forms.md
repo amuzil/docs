@@ -124,9 +124,10 @@ in a blade shape.
 
 *Multikey:* Left click.
 
-### Block
+### Force
 
-*Potential Effect:* Blocks from an attack by the target.
+*Potential Effect:* Apply generic force in a direction. Used with S, or `back`,
+results in a block effect.
 
 #### Usage
 *VR:* Hold down the block button and move the controller to meet a projectile. 
