@@ -62,7 +62,7 @@ complex techniques.
 #### Usage
 *VR:* A general circular motion with both arms, like taichi.
 
-*Multikey:* Mouse motion in a circle, `Sneak`.
+*Multikey:* `Alt`/initialiser key.
 
 ### Compress
 
