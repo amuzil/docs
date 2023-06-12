@@ -105,7 +105,7 @@ intensity, e.t.c.
 *Multikey:* Spin clockwise or anticlockwise.
 
 
-### Slice
+### Slash
 
 *Potential Effect:* Slices through the target or prepares a projectile
 in a blade shape.
@@ -156,6 +156,11 @@ Can be combined with other forms and modifiers to work in any direction.
 *VR:* Flick the VR motion controller joystick twice, or flick both wrists twice simultaneously in a direction.
 
 *Multikey:* Double tap a direction.
+
+### Bind
+*Potential Effect:* 
+
+#### Usage
 
 
 ## Element specific forms
