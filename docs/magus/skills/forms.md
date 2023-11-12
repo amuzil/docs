@@ -36,7 +36,7 @@ complex techniques.
 #### Usage
 *VR:* Raise one or both arms up.
 
-*Multikey:* Mouse motion up.
+*Multikey:* Mouse motion up below a certain speed.
 
 ### Lower
 *Potential Effect:* Lowers the target.
@@ -44,7 +44,7 @@ complex techniques.
 #### Usage
 *VR:* Lower one or both arms.
 
-*Multikey:* Mouse motion down.
+*Multikey:* Mouse motion down below a certain speed.
 
 ### Burst
 
@@ -57,7 +57,7 @@ complex techniques.
 
 ### Arc
 
-*Potential Effect:* Swirls the target around you. Useful for charging lightning or whips, or generating a protective field around you. A selected target is not required for this form, as shown by it being usable for lightning.
+*Potential Effect:* Initialises the element, swirling it around you. Useful for charging lightning or whips, or generating a protective field around you. A selected target is not required for this form, as shown by it being usable for lightning.
 
 #### Usage
 *VR:* A general circular motion with both arms, like taichi.
@@ -95,14 +95,13 @@ intensity matters more.
 *Multikey:* Rotate the mouse in a circle in front of the player. Stores which direction,
 intensity, e.t.c.
 
-### Rotate
-
+### Swirl
 *Potential Effect:* Charges up an AOE vortex.
 
 #### Usage
 *VR:* Spin clockwise or anticlockwise.
 
-*Multikey:* Spin clockwise or anticlockwise.
+*Multikey:* Spin clockwise or anticlockwise; every cardinal direction in order.
 
 
 ### Slash
@@ -113,7 +112,8 @@ in a blade shape.
 #### Usage
 *VR:* Cut in a direction with an arm, as if using a dagger or a sword.
 
-*Multikey:* Sharp mouse motion in a direction.
+*Multikey:* Sharp mouse motion in a direction while holding a key such as `Sneak`
+or `Ctrl`.
 
 ### Strike
 
@@ -124,16 +124,16 @@ in a blade shape.
 
 *Multikey:* Left click.
 
+
 ### Force
 
-*Potential Effect:* Apply generic force in a direction. Used with S, or `back`,
-results in a block effect.
+*Potential Effect:* Apply generic force in a direction.
 
 #### Usage
 *VR:* Hold down the block button and move the controller to meet a projectile. 
 Other effects can be gotten by crossing your arms over your chest.
 
-*Multikey:* Right click.
+*Multikey:* Right click and hold.
 
 *Note:* This could be used in a Sekiro/Elden Ring-esque timed parry system.
 
@@ -146,7 +146,7 @@ such as Ice Breath.
 *VR:* Arms together at sternum, then by sides in a martial arts pose (will find a picture later). 
 Head down, then up, at the same time as the arm motion. Essentially exhale then inhale.
 
-*Multikey:* Double tap `Sneak`, hold on the 2nd press.
+*Multikey:* Hold `Sneak`.
 
 ### Step
 *Potential Effect:* Mobility in a direction parallel with the ground. 
@@ -158,10 +158,13 @@ Can be combined with other forms and modifiers to work in any direction.
 *Multikey:* Double tap a direction.
 
 ### Bind
-*Potential Effect:* 
+*Potential Effect:* Fix elemental material in place for a water whip attack.
+
 
 #### Usage
+*VR:* Make a grabbing motion with an arm and twist.
 
+*Multikey:* `Right click` and `Sneak`.
 
 ## Element specific forms
 
